@@ -1,0 +1,19 @@
+{
+  "name": "lexparser",
+  "version": "1.0.0",
+  "description": "Compiler front end for compiler construction class",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "first",
+    "follow",
+    "parser",
+    "lexer",
+    "compiler",
+    "grammar"
+  ],
+  "author": "Muhammad Osama Arshad",
+  "license": "MIT"
+}

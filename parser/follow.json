@@ -1,0 +1,14 @@
+{
+    "block": ["$", "else", ";", "end"],
+    "statement-list": ["end"],
+    "listed": ["end"],
+    "expression": ["then", "do", "to", ")", "else", ";", "end"],
+    "possible-op": ["then", "do", "to", ")", "else", ";", "end"],
+    "primary": ["<", ">", "<=", ">=", "<>", "=", "*", "/", "and", "+", "-", "or", "then", "do", "to", ")", "else", ";", "end"],
+    "relational-op":  ["identifier", "number", "("],
+    "additive-op": ["identifier", "number", "("],
+    "multiplicative-op": ["identifier", "number", "("],
+    "for-list": ["do"],
+    "else-block": ["else", ";", "end"],
+    "statement": ["else", ";", "end"]
+}

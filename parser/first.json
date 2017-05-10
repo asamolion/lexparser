@@ -1,0 +1,14 @@
+{
+    "block": ["begin"],
+    "statement-list": ["begin", "variable", "if", "while", "for", ";", ""],
+    "listed": [";", ""],
+    "expression": ["identifier", "number", "("],
+    "possible-op": [ "<", ">", "<=", ">=", "=", "<>", "+", "-", "or", "*", "/", "and", "" ],
+    "primary": ["identifier", "number", "("],
+    "relational-op":  [ "<", ">", "<=", ">=", "=", "<>" ],
+    "additive-op": ["+", "-", "or"],
+    "multiplicative-op": ["*", "/", "and"],
+    "for-list": ["identifier", "number", "("],
+    "else-block": ["else", ""],
+    "statement": ["begin", "variable", "if", "while", "for", ""]
+}

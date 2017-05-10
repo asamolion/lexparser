@@ -1,0 +1,14 @@
+{
+    "begin": "begin",
+    "end": "end",
+    "or": "or",
+    "and": "and",
+    "var": "var",
+    "if": "if",
+    "else": "else",
+    "then": "then",
+    "to": "to",
+    "do": "do",
+    "for": "for",
+    "while": "while"
+}

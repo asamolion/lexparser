@@ -1,0 +1,64 @@
+block:  
+   begin statement-list end  
+
+statement-list:  
+   statement listed
+
+listed:
+   ; statement listed 
+   empty
+
+expression: 
+    primary possible-op
+
+possible-op:
+    empty
+    relational-op primary
+    additive-op primary
+    multiplicative-op primary
+
+primary:
+    identifier
+    number
+    ( expression )
+
+relational-op: one of 
+   <  <=  =  <>  =>  > 
+
+additive-op: one of 
+   +  -  or 
+
+multiplicative-op: one of 
+   *  /  and
+
+
+for-list:  
+   expression to expression  
+
+else-block:
+    else statement
+    empty
+
+statement:  
+   empty  
+   variable := expression  
+   block  
+   if expression then statement else-block  
+   while expression do statement  
+   for varid := for-list do statement  
+
+-----------------------------------------------------------------------------------------------------
+
+
+block -> begin statement-list end
+statement-list -> statement listed
+listed -> ; listed | EPSILON
+expression -> primary possible-op
+possible-op -> relational-op primary | additive-op primary | multiplicative-op primary | EPSILON
+primary -> identifier | number | ( expression ) 
+relational-op -> < | > | <= | >= | <> | =
+additive-op -> + | - | or
+multiplicative-op -> * | / | and
+for-list -> expression to expression
+else-block -> else statement | EPSILON
+statement -> block | variable := expression | if expression then statement else-block | while expression do statement | for identifier := for-list do statement | EPSILON
